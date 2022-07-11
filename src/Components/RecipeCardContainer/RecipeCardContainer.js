@@ -1,5 +1,5 @@
 import React from 'react'
-import RecipeCards from './RecipeCards'
+import RecipeCards from '../RecipeCards/RecipeCards'
 
 function RecipeCardContainer({recipes}) {
 

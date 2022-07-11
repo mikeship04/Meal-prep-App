@@ -1,6 +1,6 @@
 import React from 'react'
-import ShoppingListForm from './ShoppingListForm'
-import GroceryList from './GroceryList'
+import ShoppingListForm from '../ShoppingListForm/ShoppingListForm'
+import GroceryList from '../GroceryList/GroceryList'
 
 function ShoppingList() {
   return (
