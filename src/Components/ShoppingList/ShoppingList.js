@@ -1,12 +1,17 @@
 import React from 'react'
-import ShoppingListForm from '../ShoppingListForm/ShoppingListForm'
 import GroceryList from '../GroceryList/GroceryList'
+import Shoppinglist from './Shoppinglist.css'
 
 function ShoppingList() {
   return (
-    <div>
-        ShoppingList
-        <ShoppingListForm />
+    <div className="Shoppinglist">
+        <h2>ShoppingList</h2>
+          <form className="Shoppinglist-form">
+            <label for="Ingredient">Add Ingredient</label>
+            <input type="text" name="Ingredient"></input>
+            <label for="Quantity">Add Quantity</label>
+            <input type="text" name="Quantity"></input>
+          </form>
         <GroceryList />
     </div>
   )

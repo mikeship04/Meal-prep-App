@@ -4,8 +4,7 @@ import NavBar from './NavBar.css'
 
 function Navbar() {
   return (
-    <div className={NavBar}>
-        Navbar
+    <div className="NavBar">
         <SearchBar />
     </div>
   )

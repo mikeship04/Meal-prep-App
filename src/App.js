@@ -25,7 +25,6 @@ function App() {
 
   return (
     <div className="App">
-      <p>Hello world!</p>
       <Navbar />
       <RecipeCardContainer recipes={recipes}/>
       <ShoppingList />

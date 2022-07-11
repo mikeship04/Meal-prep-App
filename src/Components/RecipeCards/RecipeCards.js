@@ -1,5 +1,6 @@
 import React from 'react'
 import Instructions from '../Instructions'
+import Recipecards from './Recipecards.css'
 
 // what we want to display - cook_time_minutes, description, name,
 // prep_time_minutes, thumbnail_url, yields 
@@ -24,11 +25,11 @@ function RecipeCards({recipe}) {
       })
 
   return (
-    <div className="RecipeCards">
+    <div className="Recipecards">
         <h2>{name}</h2>
         <h3>Description:  {description}
         </h3>
-        <img alt={'not found'} src={thumbnail_url}/>
+        <img className="recipe-image" alt={'not found'} src={thumbnail_url}/>
         <h4>prep time: {prep_time_minutes} minutes</h4>
         <h4>cook time: {cook_time_minutes} minutes</h4>
         <h4>yields: {yields}</h4>
