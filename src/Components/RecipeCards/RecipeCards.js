@@ -1,4 +1,5 @@
 import React from 'react'
+import Instructions from '../Instructions'
 
 // what we want to display - cook_time_minutes, description, name,
 // prep_time_minutes, thumbnail_url, yields 
@@ -14,6 +15,14 @@ function RecipeCards({recipe}) {
         thumbnail_url, 
         yields} = recipe
 
+      const instructionArray = recipe.instructions
+
+      console.log(instructionArray)
+
+      const recipeInstructions = instructionArray.map((rec) => {
+        return <Instructions key={rec.id} rec={rec} />
+      })
+
   return (
     <div className="RecipeCards">
         <h2>{name}</h2>
@@ -24,7 +33,7 @@ function RecipeCards({recipe}) {
         <h4>cook time: {cook_time_minutes} minutes</h4>
         <h4>yields: {yields}</h4>
         <ol>instructions
-            <li>instruction text</li>
+            <li>{recipeInstructions}</li>
         </ol>
     </div>
   )
