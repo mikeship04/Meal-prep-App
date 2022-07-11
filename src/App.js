@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import Navbar from './Components/Navbar';
-import RecipeCardContainer from './Components/RecipeCardContainer';
-import ShoppingList from './Components/ShoppingList';
+import Navbar from './Components/NavBar/Navbar';
+import RecipeCardContainer from './Components/RecipeCardContainer/RecipeCardContainer';
+import ShoppingList from './Components/ShoppingList/ShoppingList';
 
 function App() {
   const [recipes, setRecipes] = useState([])

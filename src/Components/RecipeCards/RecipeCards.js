@@ -15,7 +15,7 @@ function RecipeCards({recipe}) {
         yields} = recipe
 
   return (
-    <div>
+    <div className="RecipeCards">
         <h2>{name}</h2>
         <h3>Description:  {description}
         </h3>
