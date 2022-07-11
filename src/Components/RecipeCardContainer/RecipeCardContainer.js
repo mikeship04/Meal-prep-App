@@ -1,5 +1,6 @@
 import React from 'react'
 import RecipeCards from '../RecipeCards/RecipeCards'
+import Recipecardcontainer from './Recipecardcontainer.css'
 
 function RecipeCardContainer({recipes}) {
 
@@ -13,7 +14,7 @@ function RecipeCardContainer({recipes}) {
     })
 
   return (
-    <div>
+    <div className="Recipecardcontainer">
         {renderRecipes}
     </div>
   )

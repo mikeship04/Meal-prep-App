@@ -2,8 +2,8 @@ import React from 'react'
 
 function SearchBar() {
   return (
-    <div>SearchBar
-      
+    <div>
+      <h2>Search</h2>
       <select>
         <option>Chicken</option>
         <option>Beef</option>

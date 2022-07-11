@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  display: grid;
+  grid-template-columns: 60%vw 30%vw;
+  grid-template-rows: 15%vh 85%vh;
+  grid-gap: 1rem;
+}

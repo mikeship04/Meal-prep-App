@@ -1,0 +1,12 @@
+.Recipecards {
+    Background: white;
+    Border-radius: 10px;
+    Width: 900px;
+    Height: 900px;
+    Border: 4px solid black;
+    }
+
+.recipe-image {
+    height: 300px;
+    width: 300px;
+}
