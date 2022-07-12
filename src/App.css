@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  grid-template-columns: 60%vw 30%vw;
-  grid-template-rows: 15%vh 85%vh;
+  grid-column: 80%vw 20%vw;
+  grid-row: 15%vh 85%vh;
   grid-gap: 1rem;
 }
