@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import GroceryList from '../GroceryList/GroceryList'
 import Shoppinglist from './Shoppinglist.css'
 import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
+import Item from '@mui/material/TextField';
 import Button from '@mui/material/Button'
+import Stack from '@mui/material/Stack';
 
 function ShoppingList() {
   const [input, setInput] = useState('')
@@ -56,30 +57,32 @@ function ShoppingList() {
       noValidate
       autoComplete="off"
     >
-      <TextField
-          id="outlined-number"
-          label="Quantity"
-          type="number"
-          value={quantity}
-          onChange={handleQuantityChange}
-          InputLabelProps={{
-            shrink: true,
-          }}
-        />
-      <TextField 
-      value={measurement} 
-      onChange={handleMeasurementChange} 
-      id="outlined-basic" 
-      label="ingredient measurement" 
-      variant="outlined" />
-      <TextField 
-      value={input} 
-      onChange={handleChange} 
-      id="outlined-basic" 
-      label="Add Ingredient" 
-      variant="outlined" />
-      <Button variant="contained" type="submit">Submit</Button>
+      <Stack spacing={2}>
+        <Item
+            id="outlined-number"
+            label="Quantity"
+            type="number"
+            value={quantity}
+            onChange={handleQuantityChange}
+            InputLabelProps={{
+              shrink: true,
+            }}
+          />
+        <Item
+        value={measurement} 
+        onChange={handleMeasurementChange} 
+        id="outlined-basic" 
+        label="ingredient measurement" 
+        variant="outlined" />
+        <Item 
+        value={input} 
+        onChange={handleChange} 
+        id="outlined-basic" 
+        label="Add Ingredient" 
+        variant="outlined" />
+        <Button variant="contained" type="submit">Submit</Button>
       {groceryListItems}
+      </Stack>
     </Box>
     
   )
