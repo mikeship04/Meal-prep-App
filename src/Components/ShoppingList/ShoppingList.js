@@ -11,6 +11,8 @@ function ShoppingList() {
             <input type="text" name="Ingredient"></input>
             <label for="Quantity">Add Quantity</label>
             <input type="text" name="Quantity"></input>
+            <label for="Submit"></label>
+            <input type="Submit"></input>
           </form>
         <GroceryList />
     </div>
