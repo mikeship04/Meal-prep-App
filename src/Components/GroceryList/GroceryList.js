@@ -1,8 +1,10 @@
 import React from 'react'
 
-function GroceryList() {
+function GroceryList({quantity, measurement, input}) {
+  
   return (
-    <div></div>
+    
+    <div>{quantity} {measurement} of {input}</div>
   )
 }
 

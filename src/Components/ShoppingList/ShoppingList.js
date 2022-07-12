@@ -39,9 +39,11 @@ function ShoppingList() {
   const groceryListItems = groceryList.map(
     (key, value) => {
     return (
-      <div key={value}>
-        {key.quantity} {key.measurement} of {key.input}
-      </div>
+      <GroceryList 
+      key={value} 
+      quantity={key.quantity} 
+      measurement={key.measurement} 
+      input={key.input}/>
     )
   })
 
@@ -77,8 +79,7 @@ function ShoppingList() {
       label="Add Ingredient" 
       variant="outlined" />
       <Button variant="contained" type="submit">Submit</Button>
-      <li>{groceryListItems}</li>
-
+      {groceryListItems}
     </Box>
     
   )
