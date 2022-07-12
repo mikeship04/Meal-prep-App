@@ -11,3 +11,6 @@
     height: 8rem;
 }
 
+.inside {
+    list-style-position: inside;
+}
