@@ -1,18 +1,19 @@
 import React from 'react'
+import Button from '@mui/material/Button'
 
-function SearchBar() {
+function SearchBar({handleSearchChange, searchState}) {
+  
+  function handleChange (e) {
+    handleSearchChange(e)
+  }
+
   return (
+
     <div>
       <h2>Search</h2>
-      <select>
-        <option>Chicken</option>
-        <option>Beef</option>
-        <option>Pork</option>
-        <option>Fish</option>
-        <option>Vegetarian</option>
-      </select>
-
-      <button>Show Favorite Recipes!</button>
+      <input value={searchState} type='text' onChange={handleChange}></input>
+      <Button variant="contained" type="submit">Submit</Button>
+      <Button variant="contained">Show Favorite Recipes!</Button>
     </div>
   )
 }
