@@ -17,7 +17,7 @@ function App() {
       }
     };
     
-    fetch('https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes', options)
+    fetch('https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&q=chicken', options)
       .then(response => response.json())
       .then(response => setRecipes(response.results))
       .catch(err => console.error(err));
