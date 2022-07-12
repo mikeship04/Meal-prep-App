@@ -2,10 +2,10 @@ import React from 'react'
 import SearchBar from '../SearchBar/SearchBar'
 import NavBar from './NavBar.css'
 
-function Navbar() {
+function Navbar({handleSearchChange, searchState}) {
   return (
     <div className="NavBar">
-        <SearchBar />
+        <SearchBar searchState={searchState} handleSearchChange={handleSearchChange} />
     </div>
   )
 }

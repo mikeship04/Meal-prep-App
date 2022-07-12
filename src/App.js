@@ -6,26 +6,35 @@ import ShoppingList from './Components/ShoppingList/ShoppingList';
 
 function App() {
   const [recipes, setRecipes] = useState([])
+  const [searchState, setSearchState] = useState('')
 
-  // useEffect(() => {
-  //   const options = {
-  //     method: 'GET',
-  //     headers: {
-  //       'X-RapidAPI-Key': '779106e3f6mshd8ff79161f60763p1564cbjsn3c570f10dc5a',
-  //       'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
-  //     }
-  //   };
+  useEffect(() => {
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '779106e3f6mshd8ff79161f60763p1564cbjsn3c570f10dc5a',
+        'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
+      }
+    };
     
-  //   fetch('https://tasty.p.rapidapi.com/recipes/list?from=0&size=21&tags=under_30_minutes', options)
-  //     .then(response => response.json())
-  //     .then(response => setRecipes(response.results))
-  //     .catch(err => console.error(err));
-  // },[])
+    fetch('https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes', options)
+      .then(response => response.json())
+      .then(response => setRecipes(response.results))
+      .catch(err => console.error(err));
+  },[])
+
+  function handleSearchChange(e) {
+    setSearchState(e.target.value)
+  }
+  
+  function handleSubmit() {
+    console.log('when we submit, capture current value and send it to the fetch')
+  }
 
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar searchState={searchState} handleSearchChange={handleSearchChange} />
       <RecipeCardContainer recipes={recipes}/>
       <ShoppingList />
     </div>
