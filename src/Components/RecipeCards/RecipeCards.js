@@ -13,6 +13,7 @@ import Box from '@mui/material/Box'
 
 function RecipeCards({recipe}) {
   const [showRecipe, setShowRecipe] = useState(true)
+  const instructionArray = recipe.instructions
 
     const {
         cook_time_minutes, 
@@ -23,7 +24,6 @@ function RecipeCards({recipe}) {
         yields,
         id} = recipe
 
-      const instructionArray = recipe.instructions
 
       const recipeInstructions = instructionArray.map((rec) => {
         return <Instructions key={rec.id} rec={rec} />
@@ -53,10 +53,14 @@ function RecipeCards({recipe}) {
                 <Typography variant="subtitle1">prep time: {prep_time_minutes} minutes</Typography>
                 <Typography variant="subtitle1">cook time: {cook_time_minutes} minutes</Typography>
                 <Typography variant="subtitle1">yields: {yields}</Typography>
-            </Box> :  
-            <ol>instructions
-            <li>{recipeInstructions}</li>
-            </ol>}
+            </Box> : 
+            <Box paddingX={1}>
+              <Typography variant="subtitle1">
+                <ol class="inside">instructions
+                <li>{recipeInstructions}</li>
+                </ol>
+              </Typography>
+            </Box>}
       </Paper>
   </Grid>
   )
