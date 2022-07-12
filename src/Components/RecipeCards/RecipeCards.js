@@ -13,22 +13,10 @@ import Box from '@mui/material/Box'
 
 function RecipeCards({recipe}) {
   const [showRecipe, setShowRecipe] = useState(true)
-  // instructionArray = [] we are setting this empty array = recipe.instructions 
-  // empty array will be filled with recipe.instruction objects with key of instructions and value of rec.display_text
-  const instructionArray = recipe.instructions
+  const instructionArray = recipe.instructions ?? [{display_text: 'recipe not found'}]
 
   console.log(instructionArray)
   
-  // .forEach((rec) => {
-  //   if(rec.instructions) {
-  //     return rec.instructions
-  //   } else {
-  //     return { instructions: 'no recipe found'}
-  //   }
-  // })
-
-  // if recipe.instructions exists ? set instructionArray = recipe.instructions : set instructions array = []
-
     const {
         cook_time_minutes, 
         description, 
@@ -72,7 +60,7 @@ function RecipeCards({recipe}) {
             <Box paddingX={1}>
               <Typography variant="subtitle1">
                 <ol class="inside">instructions
-                <li>{recipeInstructions}</li>
+                {recipeInstructions}
                 </ol>
               </Typography>
             </Box>}
