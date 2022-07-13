@@ -47,7 +47,7 @@ function RecipeCards({recipe}) {
             yields,
             id,
           }
-          const recipeItemArray = [recipeItem]
+          const recipeItemObj = recipeItem
       
           const configurationObject = {
             method: "POST",
@@ -55,7 +55,7 @@ function RecipeCards({recipe}) {
               "Content-Type": "application/json",
               "Accept": "application/json",
             },
-            body: JSON.stringify(recipeItemArray),
+            body: JSON.stringify(recipeItemObj),
             } 
             return fetch("http://localhost:3000/recipeCards", configurationObject)
         }

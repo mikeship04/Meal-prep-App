@@ -2,12 +2,6 @@
   "groceries": [
     {
       "quantity": "2",
-      "input": "flour",
-      "measurement": "cups",
-      "id": 6
-    },
-    {
-      "quantity": "2",
       "input": "deblahs",
       "measurement": "blah",
       "id": 7
@@ -54,63 +48,16 @@
       "id": 8337
     },
     {
-      "cook_time_minutes": null,
-      "description": "",
-      "name": "Doritos Chicken Bites With 1UP Sauce",
-      "prep_time_minutes": null,
-      "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
-      "yields": "Serves 4",
-      "id": 8337
-    },
-    {
       "description": "Ever wondered what its like to taste chicken for the first time? Don't worry 'cause we have you covered! Satisfy your taste buds with some <a href=\"https://tasty.co/recipe/the-best-crispy-chicken-parmesan\"> crispy-chicken-parmesan </a> or try out our href=\"https://tasty.co/recipe/easy-sticky-chicken-drumsticks\"> sticky-chicken-drumsticks </a>. One bite and you'll remember exactly why you fell in love with chicken!",
       "name": "The Reason You Love Chicken",
       "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/381267.jpg",
       "id": 3200
     },
-    [
-      {
-        "cook_time_minutes": null,
-        "description": "",
-        "name": "Doritos Chicken Bites With 1UP Sauce",
-        "prep_time_minutes": null,
-        "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
-        "yields": "Serves 4",
-        "id": 8337
-      }
-    ],
-    [
-      {
-        "cook_time_minutes": null,
-        "description": "",
-        "name": "Doritos Chicken Bites With 1UP Sauce",
-        "prep_time_minutes": null,
-        "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
-        "yields": "Serves 4",
-        "id": 8337
-      }
-    ],
-    [
-      {
-        "cook_time_minutes": null,
-        "description": "",
-        "name": "Doritos Chicken Bites With 1UP Sauce",
-        "prep_time_minutes": null,
-        "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
-        "yields": "Serves 4",
-        "id": 8337
-      }
-    ],
-    [
-      {
-        "cook_time_minutes": null,
-        "description": "",
-        "name": "Doritos Chicken Bites With 1UP Sauce",
-        "prep_time_minutes": null,
-        "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
-        "yields": "Serves 4",
-        "id": 8337
-      }
-    ]
+    {
+      "description": "For meat lovers, breakfast is usually incomplete without some crispy bacon on the side with their morning eggs. The smoky flavor of the sliced meat along with its melting layers is a treat to dig into! Here's a guide to how you can create some amazing dishes using bacon. From <a href=\"https://tasty.co/recipe/cheesy-bacon-twists\"> cheesy-bacon-twists </a> to href=\"https://tasty.co/recipe/bacon-wrapped-parmesan-garlic-knots\"> bacon-wrapped-parmesan-garlic-knots </a>, we can safely say, \"Bacon makes everything better!\"",
+      "name": "Bacon Makes Everything Better!",
+      "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/378896.jpg",
+      "id": 3187
+    }
   ]
 }

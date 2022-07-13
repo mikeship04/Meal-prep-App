@@ -8,6 +8,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import DeleteIcon from '@mui/icons-material/Delete';
+import grocerylist from './grocerylist.css'
 
 function GroceryList({quantity, measurement, input}) {
 
@@ -24,27 +25,28 @@ function generate(element) {
 }
 
 function handleDelete() {
-  fetch(`http://localhost:3000/groceries/${5}`, {
+  fetch(`http://localhost:3000/groceries/${groceries.id}`, {
     method: "DELETE",
   })
     .then((r) => r.json())
     .then(() => console.log("deleted!"));
+    console.log('deleted')
 }
 
 
 return (
 
   <Grid item xs={12} md={6}>
-      <Typography sx={{ mt: 4, mb: 2, color: 'green' }} variant="h6" component="div">
+      <Typography  sx={{ mt: -2, mb: 2, color: 'green' }} variant="h6" component="div">
         </Typography>
         <Demo>
           <List >
             {generate(
-              <ListItem >
+              <ListItem className="grocery-list" >
                 <ListItemText 
                 />{quantity} {measurement} of {input}
                 <ListItemIcon edge="end" aria-label="delete">
-              <DeleteIcon onClick={handleDelete}/>
+              <DeleteIcon className="delete-button" onClick={handleDelete}/>
             </ListItemIcon>
               </ListItem>,
 

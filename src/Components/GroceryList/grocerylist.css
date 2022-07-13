@@ -1,0 +1,15 @@
+.grocery-list {
+  background-color: lightblue;
+  Border-radius: 10px;
+  Border: 3px groove rgba(0, 0, 0, 0.714);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.delete-button {
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+}
