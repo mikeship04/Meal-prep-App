@@ -1,0 +1,65 @@
+{
+  "groceries": [
+    {
+      "quantity": "2",
+      "input": "salmon",
+      "measurement": "sides",
+      "id": 2
+    },
+    {
+      "quantity": "2",
+      "input": "green",
+      "measurement": "broccoli",
+      "id": 3
+    },
+    {
+      "quantity": "2",
+      "input": "tater",
+      "measurement": "tots",
+      "id": 4
+    },
+    {
+      "quantity": "2",
+      "input": "adga",
+      "measurement": "gdsag",
+      "id": 5
+    },
+    {
+      "quantity": "2",
+      "input": "flour",
+      "measurement": "cups",
+      "id": 6
+    },
+    {
+      "quantity": "2",
+      "input": "deblahs",
+      "measurement": "blah",
+      "id": 7
+    },
+    {
+      "quantity": "2",
+      "input": "deblahs",
+      "measurement": "blah",
+      "id": 8
+    },
+    {
+      "quantity": "3",
+      "input": "thigns",
+      "measurement": "big",
+      "id": 9
+    },
+    {
+      "quantity": "2",
+      "input": "gasg",
+      "measurement": "gasdg",
+      "id": 10
+    }
+  ],
+  "recipeCards": [
+    {
+      "id": 1,
+      "name": "name",
+      "instructions": "instructions"
+    }
+  ]
+}
