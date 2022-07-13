@@ -16,32 +16,50 @@ function App() {
       'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
     }
   };
+  const [favorites, setFavorites] = useState([])
+  const [display, setDisplay] = useState([true])
 
-  // useEffect(() => {
+  useEffect(() => {
+   fetch('http://localhost:3000/recipeCards')
+   .then(res => res.json())
+   .then((data) => setFavorites(data))
+ }, [])
+  
+  useEffect(() => {
     
-  //   fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&q=chicken`, options)
-  //     .then(response => response.json())
-  //     .then(response => setRecipes(response.results))
-  //     .catch(err => console.error(err));
-  // },[])
-
-  function handleSearchChange(e) {
-    setSearchState(e.target.value)
-  }
+    fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&q=chicken`, options)
+    .then(response => response.json())
+    .then(response => setRecipes(response.results))
+    .catch(err => console.error(err));
+  },[])
   
   function handleSubmit(e) {
     e.preventDefault()
     
     fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&q=${searchParam}`, options)
-      .then(response => response.json())
-      .then(response => setRecipes(response.results))
-      .catch(err => console.error(err));
+    .then(response => response.json())
+    .then(response => setRecipes(response.results))
+    .catch(err => console.error(err));
   }
+  
+  function handleSearchChange(e) {
+    setSearchState(e.target.value)
+  }
+
+  function handleShowFavorites () {
+    setDisplay(!display)
+  }
+  console.log(favorites)
+  
 
   return (
     <div className="App">
-      <Navbar handleSubmit={handleSubmit} searchState={searchState} handleSearchChange={handleSearchChange} />
-      <RecipeCardContainer recipes={recipes}/>
+      <Navbar 
+      handleShowFavorites={handleShowFavorites} 
+      handleSubmit={handleSubmit} 
+      searchState={searchState} 
+      handleSearchChange={handleSearchChange} />
+      <RecipeCardContainer recipes={display ? recipes : favorites}/>
       <ShoppingList />
     </div>
   );

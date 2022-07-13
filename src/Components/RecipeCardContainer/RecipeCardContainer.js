@@ -10,7 +10,7 @@ function RecipeCardContainer({recipes}) {
        return <RecipeCards key={r.id} recipe={r}/>
     })
 
-
+//  if (whatever is the thing we are evaluating) ? renderRecipes : renderFavorites
   return (
     <div className="Recipecardcontainer">
       <Container>

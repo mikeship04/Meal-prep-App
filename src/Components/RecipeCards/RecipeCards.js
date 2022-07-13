@@ -38,9 +38,30 @@ function RecipeCards({recipe}) {
       function handleLike(e) {
         e.stopPropagation()
         setLike(!like)
-      }
+          const recipeItem = { 
+            cook_time_minutes, 
+            description, 
+            name, 
+            prep_time_minutes, 
+            thumbnail_url, 
+            yields,
+            id,
+          }
+          const recipeItemArray = [recipeItem]
+      
+          const configurationObject = {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json",
+            },
+            body: JSON.stringify(recipeItemArray),
+            } 
+            return fetch("http://localhost:3000/recipeCards", configurationObject)
+        }
+      
 
-  // onclick capture the Itim whose id matches and post all information as an object to our database/recipeCards
+  // onclick capture the Item whose id matches and post all information as an object to our database/recipeCards
 
   return (
 <Grid item xs={4}> 

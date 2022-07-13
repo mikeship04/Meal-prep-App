@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import GroceryList from '../GroceryList/GroceryList'
 import Shoppinglist from './Shoppinglist.css'
 import Box from '@mui/material/Box';
@@ -12,6 +12,12 @@ function ShoppingList() {
   const [quantity, setQuantity] = useState(0)
   const [measurement, setMeasurement] = useState('')
   const [groceryList, setGroceryList] = useState([])
+  
+  useEffect(() => {
+    fetch('http://localhost:3000/groceries')
+    .then(res => res.json())
+    .then((data) => setGroceryList(data))
+  }, [])
 
   function handleChange (e) {
     setInput(e.target.value)
@@ -25,6 +31,7 @@ function ShoppingList() {
     setMeasurement(e.target.value)
   }
 
+  //conditionally add if statement, if event.target.id exists = run code else null
   function handleSubmit(event) {
     event.preventDefault()
     const shoppingItem = { 
@@ -49,21 +56,7 @@ function ShoppingList() {
       return fetch("http://localhost:3000/groceries", configurationObject)
   }
 
-    // const renderGroceries = fetch('http://localhost:3000/groceries')
-    // .then(res => res.json())
-    // .then((data) => data.map(
-    //   (key, value) => {
-    //   return (
-    //     <GroceryList 
-    //     key={value} 
-    //     quantity={key.quantity} 
-    //     measurement={key.measurement} 
-    //     input={key.input}/>
-    //   )
-    // }))
-    // console.log(renderGroceries)
-    
-    
+  //need to do something with grocerylist stae to delete?
   const groceryListItems = groceryList.map(
     (key, value) => {
     return (
@@ -74,6 +67,7 @@ function ShoppingList() {
       input={key.input}/>
     )
   })
+  console.log(groceryListItems)
 
   return (
     <Box className='shopping-list'
