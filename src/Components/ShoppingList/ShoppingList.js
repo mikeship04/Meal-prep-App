@@ -52,12 +52,12 @@ function ShoppingList() {
     <Box 
       component="form" onSubmit={handleSubmit}
       sx={{
-        '& > :not(style)': { m: 1, width: '25ch' },
+        '& > :not(style)': { m: 3, width: '25ch' },
       }}
       noValidate
       autoComplete="off"
     >
-      <Stack spacing={2}>
+      <Stack spacing={1}>
         <Item
             id="outlined-number"
             label="Quantity"
@@ -71,15 +71,22 @@ function ShoppingList() {
         <Item
         value={measurement} 
         onChange={handleMeasurementChange} 
-        id="outlined-basic" 
-        label="ingredient measurement" 
-        variant="outlined" />
+        id="standard-search" 
+        label="Ingredient measurement" 
+        variant="standard" 
+        InputLabelProps={{
+          shrink: true,
+        }}/>
         <Item 
         value={input} 
         onChange={handleChange} 
-        id="outlined-basic" 
+        id="standard-search" 
         label="Add Ingredient" 
-        variant="outlined" />
+        variant="standard" 
+        InputLabelProps={{
+          shrink: true,
+        }}/>
+
         <Button variant="contained" type="submit">Submit</Button>
       {groceryListItems}
       </Stack>

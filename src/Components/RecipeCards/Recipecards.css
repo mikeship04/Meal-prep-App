@@ -1,16 +1,14 @@
-/* /.Recipecards {
-    Background: white;
+.Recipecards {
     Border-radius: 10px;
-    Width: 900px;
-    Height: 900px;
-    Border: 4px solid black;
-    } */
+    Border: 4px groove rgba(0, 0, 0, 0.714);
+    } 
 
 .recipe-image {
     width: 100%;
-    height: 8rem;
+    height: 10rem;
 }
 
 .inside {
     list-style-position: inside;
 }
+
