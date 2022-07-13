@@ -14,8 +14,6 @@ import Box from '@mui/material/Box'
 function RecipeCards({recipe}) {
   const [showRecipe, setShowRecipe] = useState(true)
   const instructionArray = recipe.instructions ?? [{display_text: 'recipe not found'}]
-
-  console.log(instructionArray)
   
     const {
         cook_time_minutes, 
@@ -26,17 +24,13 @@ function RecipeCards({recipe}) {
         yields,
         id} = recipe
 
-
       const recipeInstructions = instructionArray.map((rec) => {
         return <Instructions key={rec.id} rec={rec} />
       })
-      console.log(recipeInstructions)
 
       function handleClick(recipe) {
         setShowRecipe(!showRecipe)
       }
-      console.log(showRecipe)
-      
 
   return (
 <Grid item xs={4}> 
@@ -59,7 +53,7 @@ function RecipeCards({recipe}) {
             </Box> : 
             <Box paddingX={1}>
               <Typography variant="subtitle1">
-                <ol class="inside">Instructions
+                <ol className="inside">Instructions
                 {recipeInstructions}
                 </ol>
               </Typography>
