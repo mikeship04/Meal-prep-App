@@ -9,9 +9,9 @@ function SearchBar({handleSearchChange, searchState}) {
 
   return (
 
-    <div>
+    <div className="searchbar">
       <h2>Search</h2>
-      <input value={searchState} type='text' onChange={handleChange}></input>
+      <input className='search' value={searchState} type='text' onChange={handleChange}></input>
       <Button variant="contained" type="submit">Submit</Button>
       <Button variant="contained">Show Favorite Recipes!</Button>
     </div>

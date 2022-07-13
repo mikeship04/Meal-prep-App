@@ -40,26 +40,26 @@ function RecipeCards({recipe}) {
 
   return (
 <Grid item xs={4}> 
-      <Paper id={id} onClick={handleClick} elevation={6} className="Recipecards">
+      <Paper id={id} onClick={handleClick} elevation={20} className="Recipecards">
           <img className="recipe-image" alt={name} src={thumbnail_url}/>
             {showRecipe ? <Box paddingX={1}>
-              <Typography variant="h5" component="h2">{name}</Typography>
+              <Typography variant="h4" component="h2">{name}</Typography>
                 <Box
                   sx={{
                     display: 'flex',
                     alignItems: 'center'
                   }}>
-                  <Typography variant="body2" component="p">
+                  <Typography variant="body1" component="p">
                     Description:  {description}
                   </Typography>
                 </Box>
-                <Typography variant="subtitle1">prep time: {prep_time_minutes} minutes</Typography>
-                <Typography variant="subtitle1">cook time: {cook_time_minutes} minutes</Typography>
-                <Typography variant="subtitle1">yields: {yields}</Typography>
+                <Typography variant="subtitle1">Prep time: {prep_time_minutes} minutes</Typography>
+                <Typography variant="subtitle1">Cook time: {cook_time_minutes} minutes</Typography>
+                <Typography variant="subtitle1">Tields: {yields}</Typography>
             </Box> : 
             <Box paddingX={1}>
               <Typography variant="subtitle1">
-                <ol class="inside">instructions
+                <ol class="inside">Instructions
                 {recipeInstructions}
                 </ol>
               </Typography>
