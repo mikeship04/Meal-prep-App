@@ -1,7 +1,8 @@
 
-.Shoppinglist {
-    align-items: start;
-    justify-items: start;
+.shopping-list {
+  top: calc(30% - 200px);
+  left: calc(90% - 200px);
+  position: fixed;
   }
 
   input[type=text], select {

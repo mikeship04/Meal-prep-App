@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Item from '@mui/material/TextField';
 import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack';
+import { render } from '@testing-library/react';
 
 function ShoppingList() {
   const [input, setInput] = useState('')
@@ -28,15 +29,41 @@ function ShoppingList() {
     event.preventDefault()
     const shoppingItem = { 
       quantity: quantity, 
-      input: input, measurement: 
-      measurement}
+      input: input, 
+      measurement: measurement
+    }
     const shoppingItemArray = [...groceryList, shoppingItem]
     setGroceryList(shoppingItemArray)
     setInput('')
     setQuantity('')
     setMeasurement('')
+
+    const configurationObject = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+      body: JSON.stringify(shoppingItem),
+      } 
+      return fetch("http://localhost:3000/groceries", configurationObject)
   }
 
+    // const renderGroceries = fetch('http://localhost:3000/groceries')
+    // .then(res => res.json())
+    // .then((data) => data.map(
+    //   (key, value) => {
+    //   return (
+    //     <GroceryList 
+    //     key={value} 
+    //     quantity={key.quantity} 
+    //     measurement={key.measurement} 
+    //     input={key.input}/>
+    //   )
+    // }))
+    // console.log(renderGroceries)
+    
+    
   const groceryListItems = groceryList.map(
     (key, value) => {
     return (
@@ -49,7 +76,7 @@ function ShoppingList() {
   })
 
   return (
-    <Box 
+    <Box className='shopping-list'
       component="form" onSubmit={handleSubmit}
       sx={{
         '& > :not(style)': { m: 3, width: '25ch' },
