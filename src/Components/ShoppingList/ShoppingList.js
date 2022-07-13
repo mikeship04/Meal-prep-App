@@ -60,7 +60,7 @@ function ShoppingList() {
   const groceryListItems = groceryList.map(
     (key, value) => {
     return (
-      <GroceryList 
+      <GroceryList
       key={value} 
       quantity={key.quantity} 
       measurement={key.measurement} 
