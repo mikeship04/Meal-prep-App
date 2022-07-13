@@ -24,7 +24,7 @@ function generate(element) {
 }
 
 function handleDelete() {
-  fetch(`http://localhost:3000/groceries/${GroceryList.id}`, {
+  fetch(`http://localhost:3000/groceries/${5}`, {
     method: "DELETE",
   })
     .then((r) => r.json())

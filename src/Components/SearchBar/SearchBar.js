@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
 import Item from '@mui/material/TextField'
 
-function SearchBar({handleSearchChange, searchState, handleSubmit}) {
-  
+function SearchBar({handleSearchChange, searchState, handleSubmit, handleShowFavorites}) {
+
   function handleChange (e) {
     handleSearchChange(e)
   }
@@ -36,7 +36,7 @@ function SearchBar({handleSearchChange, searchState, handleSubmit}) {
           shrink: true,
         }}/>
         <Button variant="contained" type="submit">Submit</Button>
-        <Button variant="contained">Show Favorite Recipes!</Button>
+        <Button onClick={handleShowFavorites} variant="contained">Show Favorite Recipes!</Button>
       </Box>
     </div>
   )

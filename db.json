@@ -2,30 +2,6 @@
   "groceries": [
     {
       "quantity": "2",
-      "input": "salmon",
-      "measurement": "sides",
-      "id": 2
-    },
-    {
-      "quantity": "2",
-      "input": "green",
-      "measurement": "broccoli",
-      "id": 3
-    },
-    {
-      "quantity": "2",
-      "input": "tater",
-      "measurement": "tots",
-      "id": 4
-    },
-    {
-      "quantity": "2",
-      "input": "adga",
-      "measurement": "gdsag",
-      "id": 5
-    },
-    {
-      "quantity": "2",
       "input": "flour",
       "measurement": "cups",
       "id": 6
@@ -53,13 +29,88 @@
       "input": "gasg",
       "measurement": "gasdg",
       "id": 10
+    },
+    {
+      "quantity": "4",
+      "input": "bgarb",
+      "measurement": "garbs",
+      "id": 11
+    },
+    {
+      "quantity": "4",
+      "input": "agadsg",
+      "measurement": "gsagdsag",
+      "id": 12
     }
   ],
   "recipeCards": [
     {
-      "id": 1,
-      "name": "name",
-      "instructions": "instructions"
-    }
+      "cook_time_minutes": null,
+      "description": "",
+      "name": "Doritos Chicken Bites With 1UP Sauce",
+      "prep_time_minutes": null,
+      "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
+      "yields": "Serves 4",
+      "id": 8337
+    },
+    {
+      "cook_time_minutes": null,
+      "description": "",
+      "name": "Doritos Chicken Bites With 1UP Sauce",
+      "prep_time_minutes": null,
+      "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
+      "yields": "Serves 4",
+      "id": 8337
+    },
+    {
+      "description": "Ever wondered what its like to taste chicken for the first time? Don't worry 'cause we have you covered! Satisfy your taste buds with some <a href=\"https://tasty.co/recipe/the-best-crispy-chicken-parmesan\"> crispy-chicken-parmesan </a> or try out our href=\"https://tasty.co/recipe/easy-sticky-chicken-drumsticks\"> sticky-chicken-drumsticks </a>. One bite and you'll remember exactly why you fell in love with chicken!",
+      "name": "The Reason You Love Chicken",
+      "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/381267.jpg",
+      "id": 3200
+    },
+    [
+      {
+        "cook_time_minutes": null,
+        "description": "",
+        "name": "Doritos Chicken Bites With 1UP Sauce",
+        "prep_time_minutes": null,
+        "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
+        "yields": "Serves 4",
+        "id": 8337
+      }
+    ],
+    [
+      {
+        "cook_time_minutes": null,
+        "description": "",
+        "name": "Doritos Chicken Bites With 1UP Sauce",
+        "prep_time_minutes": null,
+        "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
+        "yields": "Serves 4",
+        "id": 8337
+      }
+    ],
+    [
+      {
+        "cook_time_minutes": null,
+        "description": "",
+        "name": "Doritos Chicken Bites With 1UP Sauce",
+        "prep_time_minutes": null,
+        "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
+        "yields": "Serves 4",
+        "id": 8337
+      }
+    ],
+    [
+      {
+        "cook_time_minutes": null,
+        "description": "",
+        "name": "Doritos Chicken Bites With 1UP Sauce",
+        "prep_time_minutes": null,
+        "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
+        "yields": "Serves 4",
+        "id": 8337
+      }
+    ]
   ]
 }
