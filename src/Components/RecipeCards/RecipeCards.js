@@ -13,7 +13,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 // instructions - array of objects we want display_text, position recipe.instructions.forEach((instruction)
 // what we want to grab id to add key value
 
-function RecipeCards({recipe}) {
+function RecipeCards({recipe, setFavorites, favorites}) {
   const [showRecipe, setShowRecipe] = useState(true)
   const [like, setLike] = useState(false)
   const instructionArray = recipe.instructions ?? [{display_text: 'recipe not found'}]
@@ -25,7 +25,8 @@ function RecipeCards({recipe}) {
         prep_time_minutes, 
         thumbnail_url, 
         yields,
-        id} = recipe
+        id,
+        instructions} = recipe
 
       const recipeInstructions = instructionArray.map((rec) => {
         return <Instructions key={rec.id} rec={rec} />
@@ -45,9 +46,11 @@ function RecipeCards({recipe}) {
             prep_time_minutes, 
             thumbnail_url, 
             yields,
-            id,
+            id: id+10000,
+            like: true,
+            instructions,
           }
-          const recipeItemObj = recipeItem
+          const recipeItemArray = recipeItem
       
           const configurationObject = {
             method: "POST",
@@ -55,13 +58,10 @@ function RecipeCards({recipe}) {
               "Content-Type": "application/json",
               "Accept": "application/json",
             },
-            body: JSON.stringify(recipeItemObj),
+            body: JSON.stringify(recipeItemArray),
             } 
             return fetch("http://localhost:3000/recipeCards", configurationObject)
         }
-      
-
-  // onclick capture the Item whose id matches and post all information as an object to our database/recipeCards
 
   return (
 <Grid item xs={4}> 

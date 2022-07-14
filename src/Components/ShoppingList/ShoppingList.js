@@ -73,7 +73,6 @@ function ShoppingList() {
       })    
   }
   
-  //need to do something with grocerylist stae to delete?
   const groceryListItems = groceryList.map(
     (key, value) => {
     return (

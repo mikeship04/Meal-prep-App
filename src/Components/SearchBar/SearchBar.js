@@ -17,7 +17,6 @@ function SearchBar({handleSearchChange, searchState, handleSubmit, handleShowFav
 
     <div className="searchbar">
       <h2>Search</h2>
-      {/* <input className='search' value={searchState} type='text' onChange={handleChange}></input> */}
       <Box
       component="form" onSubmit={handleOnSubmit}
       sx={{
