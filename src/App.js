@@ -48,9 +48,7 @@ function App() {
 
   function handleShowFavorites () {
     setDisplay(!display)
-  }
-  console.log(favorites)
-  
+  }  
 
   return (
     <div className="App">

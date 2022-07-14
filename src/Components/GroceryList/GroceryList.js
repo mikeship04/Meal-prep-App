@@ -10,7 +10,7 @@ import Typography from '@mui/material/Typography';
 import DeleteIcon from '@mui/icons-material/Delete';
 import grocerylist from './grocerylist.css'
 
-function GroceryList({quantity, measurement, input}) {
+function GroceryList({quantity, measurement, input, id, handleDelete}) {
 
 const Demo = styled('div')(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
@@ -24,15 +24,9 @@ function generate(element) {
   );
 }
 
-function handleDelete() {
-  fetch(`http://localhost:3000/groceries/${groceries.id}`, {
-    method: "DELETE",
-  })
-    .then((r) => r.json())
-    .then(() => console.log("deleted!"));
-    console.log('deleted')
+function reallyDelete() {
+  handleDelete(id)
 }
-
 
 return (
 
@@ -42,11 +36,11 @@ return (
         <Demo>
           <List >
             {generate(
-              <ListItem className="grocery-list" >
+              <ListItem  className="grocery-list" >
                 <ListItemText 
                 />{quantity} {measurement} of {input}
                 <ListItemIcon edge="end" aria-label="delete">
-              <DeleteIcon className="delete-button" onClick={handleDelete}/>
+              <DeleteIcon className="delete-button" onClick={reallyDelete}/>
             </ListItemIcon>
               </ListItem>,
 
