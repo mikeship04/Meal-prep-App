@@ -4,7 +4,7 @@ import Navbar from './Components/NavBar/Navbar';
 import RecipeCardContainer from './Components/RecipeCardContainer/RecipeCardContainer';
 import ShoppingList from './Components/ShoppingList/ShoppingList';
 import Home from './Components/Router/Home'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
 
 function App() {
   const [recipes, setRecipes] = useState([])

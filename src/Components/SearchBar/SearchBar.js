@@ -2,8 +2,21 @@ import React, { useState, useEffect} from 'react'
 import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
 import Item from '@mui/material/TextField'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+import { amber } from '@mui/material/colors'
 
 function SearchBar({handleSearchChange, searchState, handleSubmit, handleShowFavorites}) {
+
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: amber[500],
+      },
+      secondary: {
+        main: '#ff9100',
+      },
+    },
+  });
 
   function handleChange (e) {
     handleSearchChange(e)
@@ -34,8 +47,10 @@ function SearchBar({handleSearchChange, searchState, handleSubmit, handleShowFav
         InputLabelProps={{
           shrink: true,
         }}/>
+        <ThemeProvider theme={theme}>
         <Button variant="contained" type="submit">Submit</Button>
         <Button onClick={handleShowFavorites} variant="contained">Show Favorite Recipes!</Button>
+        </ThemeProvider>
       </Box>
     </div>
   )

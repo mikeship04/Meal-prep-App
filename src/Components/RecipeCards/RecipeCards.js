@@ -28,6 +28,14 @@ function RecipeCards({recipe, setFavorites, favorites}) {
         id,
         instructions} = recipe
 
+    let cleanDescription 
+    if (description) {
+      cleanDescription = <Typography variant="body1" component="p" dangerouslySetInnerHTML={{__html: description}} />;
+    } else {
+      cleanDescription = name;
+    }
+    
+
       const recipeInstructions = instructionArray.map((rec) => {
         return <Instructions key={rec.id} rec={rec} />
       })
@@ -75,9 +83,7 @@ function RecipeCards({recipe, setFavorites, favorites}) {
                     display: 'flex',
                     alignItems: 'center'
                   }}>
-                  <Typography  variant="body1" component="p">
-                    Description:  {description || name}
-                  </Typography>
+                    {cleanDescription}
                 </Box>
                 <Typography variant="subtitle1">Prep time: {prep_time_minutes || 'N/A'} minutes</Typography>
                 <Typography variant="subtitle1">Cook time: {cook_time_minutes || 'N/A'} minutes</Typography>

@@ -6,12 +6,25 @@ import Item from '@mui/material/TextField';
 import Button from '@mui/material/Button'
 import Stack from '@mui/material/Stack';
 import { render } from '@testing-library/react';
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+import { amber } from '@mui/material/colors'
 
 function ShoppingList() {
   const [input, setInput] = useState('')
   const [quantity, setQuantity] = useState(0)
   const [measurement, setMeasurement] = useState('')
   const [groceryList, setGroceryList] = useState([])
+
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: amber[500],
+      },
+      secondary: {
+        main: '#ff9100',
+      },
+    },
+  });
   
   useEffect(() => {
     fetch('http://localhost:3000/groceries')
@@ -127,8 +140,9 @@ function ShoppingList() {
         InputLabelProps={{
           shrink: true,
         }}/>
-
+        <ThemeProvider theme={theme}>
         <Button variant="contained" type="submit">Submit</Button>
+        </ThemeProvider>
       {groceryListItems}
       </Stack>
     </Box>
