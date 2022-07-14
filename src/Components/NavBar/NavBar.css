@@ -10,7 +10,7 @@
 .NavBar {
     grid-column: 1 /span 2;
     grid-row: 1;
-    background-color: lightblue;
+    background-color: #efc1a9;
     display: grid;
     align-items: center;
     justify-items: center;

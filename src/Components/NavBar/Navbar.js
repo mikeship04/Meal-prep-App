@@ -5,10 +5,6 @@ import NavBar from './NavBar.css'
 
 function Navbar({handleSearchChange, searchState, handleSubmit, handleShowFavorites}) {
   return (
-    <>
-    <div className="home">
-      <h2>Home</h2>
-    </div>
     <div className="NavBar">
         <SearchBar 
         handleSubmit={handleSubmit} 
@@ -16,7 +12,6 @@ function Navbar({handleSearchChange, searchState, handleSubmit, handleShowFavori
         handleSearchChange={handleSearchChange}
         handleShowFavorites={handleShowFavorites} />
     </div>
-    </>
   )
 }
 

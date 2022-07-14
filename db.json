@@ -2,15 +2,9 @@
   "groceries": [
     {
       "quantity": "3",
-      "input": "BBQ",
-      "measurement": "bottles",
-      "id": 2
-    },
-    {
-      "quantity": "1",
-      "input": "pepper",
-      "measurement": "lb",
-      "id": 3
+      "input": "CDASCD",
+      "measurement": "CASDC",
+      "id": 1
     }
   ],
   "recipeCards": [
@@ -576,6 +570,138 @@
           "position": 6,
           "display_text": "Remove the chicken once cooked and crispy. Serve. .",
           "start_time": 0
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": 10,
+      "description": "These healthy-ish, plant-based mushroom nuggets will be the hype of your next get-together. This easy snack is crispy, crunchy, and savory and pairs well with almost any dipping sauce.",
+      "name": "Mushroom “Chicken Nuggets”",
+      "prep_time_minutes": 20,
+      "thumbnail_url": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/49c3356ce3394ca9aec09bd7162a49b2.jpeg",
+      "yields": "Servings: 4",
+      "id": 18354,
+      "like": true,
+      "instructions": [
+        {
+          "display_text": "Fill a large, high-walled skillet halfway with vegetable oil and heat over medium heat until the temperature reaches 350°F (180°C).",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72353,
+          "position": 1
+        },
+        {
+          "position": 2,
+          "display_text": "Remove the caps from the mushrooms and reserve for another use, then slice the mushroom stems into ½-inch-thick rounds.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72354
+        },
+        {
+          "id": 72355,
+          "position": 3,
+          "display_text": "In a medium bowl, whisk together the buckwheat flour, cornstarch, paprika, garlic powder, salt, pepper. Add the water and whisk until smooth. Whisk in the chili powder.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null
+        },
+        {
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72356,
+          "position": 4,
+          "display_text": "Add the cornflakes to a separate medium bowl",
+          "start_time": 0
+        },
+        {
+          "display_text": "Dip the mushroom rounds in the batter to coat completely, then dredge in the crushed cornflakes until fully covered.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72357,
+          "position": 5
+        },
+        {
+          "temperature": null,
+          "id": 72358,
+          "position": 6,
+          "display_text": "Working in batches, fry the mushrooms in the hot oil until golden brown, 3–5 minutes per side. Transfer to a paper towel-lined plate to drain and sprinkle with salt.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0
+        },
+        {
+          "position": 7,
+          "display_text": "Serve warm with your favorite sauce for dipping.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72359
+        },
+        {
+          "display_text": "Enjoy!",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72360,
+          "position": 8
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": null,
+      "description": "",
+      "name": "Doritos Chicken Bites With 1UP Sauce",
+      "prep_time_minutes": null,
+      "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/385618.jpg",
+      "yields": "Serves 4",
+      "id": 18337,
+      "like": true,
+      "instructions": [
+        {
+          "display_text": "Preheat your oven to 400 degrees. Place the doritos in a food processor (or use a large resealable bag and rolling pin to finely crush the chips) and blitz until the chips become a fine crumb. Transfer the pulsed chips to a bowl.  Add the flour and eggs to their own respective bowls, then begin breading the chicken. Dip each piece of chicken in the flour, then the egg, then the chip crumbs and toss around to coat evenly. Repeat for each piece of chicken, then transfer to a parchment lined baking tray. Bake for 14 - 16 minutes, or until the internal temperature of the chicken reaches 165 degrees.",
+          "start_time": 36000,
+          "appliance": "oven",
+          "end_time": 65500,
+          "temperature": 400,
+          "id": 72254,
+          "position": 1
+        },
+        {
+          "display_text": "While the chicken bakes, start to make the 1UP sauce. In a food processor combine the mayo, sour cream, garlic powder, onion powder, pepper, salt, and blue cheese. Pulse well to combine evenly, then transfer to your serving bowl and set aside.",
+          "start_time": 67000,
+          "appliance": null,
+          "end_time": 83500,
+          "temperature": null,
+          "id": 72255,
+          "position": 2
+        },
+        {
+          "temperature": null,
+          "id": 72256,
+          "position": 3,
+          "display_text": "In a separate bowl, whisk together the hot sauce and melted butter. When the chicken bites are cooked, remove from the oven and toss in the hot sauce and butter. Top with freshly sliced chives and serve alongside the 1UP sauce.",
+          "start_time": 85000,
+          "appliance": null,
+          "end_time": 101833
+        },
+        {
+          "appliance": null,
+          "end_time": 108833,
+          "temperature": null,
+          "id": 72278,
+          "position": 4,
+          "display_text": "Enjoy!",
+          "start_time": 106000
         }
       ]
     }
