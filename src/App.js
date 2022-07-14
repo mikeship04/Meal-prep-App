@@ -4,7 +4,7 @@ import Navbar from './Components/NavBar/Navbar';
 import RecipeCardContainer from './Components/RecipeCardContainer/RecipeCardContainer';
 import ShoppingList from './Components/ShoppingList/ShoppingList';
 import Home from './Components/Router/Home'
-
+import {key} from './superSecretStuff'
 
 function App() {
   const [recipes, setRecipes] = useState([])
@@ -14,7 +14,7 @@ function App() {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '1a3ef7e2a6msh37681d59318872ep145809jsn7ce65add9101',
+      'X-RapidAPI-Key': key,
       'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
     }
   };

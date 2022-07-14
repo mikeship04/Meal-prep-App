@@ -1,5 +1,5 @@
 .App {
   display: grid;
-  grid-column: 80%vw 20%vw;
+  grid-column: 90%vw 10%vw;
   grid-row: 15%vh 85%vh;
 }
