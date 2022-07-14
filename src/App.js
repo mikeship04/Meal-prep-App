@@ -53,11 +53,14 @@ function App() {
   return (
     <div className="App">
       <Navbar 
-      handleShowFavorites={handleShowFavorites} 
-      handleSubmit={handleSubmit} 
-      searchState={searchState} 
-      handleSearchChange={handleSearchChange} />
-      <RecipeCardContainer recipes={display ? recipes : favorites}/>
+        handleShowFavorites={handleShowFavorites} 
+        handleSubmit={handleSubmit} 
+        searchState={searchState} 
+        handleSearchChange={handleSearchChange} />
+      <RecipeCardContainer 
+      setFavorites={setFavorites}
+      favorites={favorites} 
+      recipes={display ? recipes : favorites}/>
       <ShoppingList />
     </div>
   );
