@@ -1,4 +1,5 @@
 .Recipecards {
+    overflow: hidden;
     Border-radius: 10px;
     Border: 5px groove rgba(0, 0, 0, 0.714);
     } 
@@ -9,6 +10,6 @@
 }
 
 .inside {
-    list-style-position: left;
+    list-style-position: inside;
 }
 

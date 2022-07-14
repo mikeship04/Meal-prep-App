@@ -5,6 +5,12 @@
       "input": "CDASCD",
       "measurement": "CASDC",
       "id": 1
+    },
+    {
+      "quantity": "3",
+      "input": "sgasg",
+      "measurement": "adf",
+      "id": 2
     }
   ],
   "recipeCards": [
@@ -702,6 +708,90 @@
           "position": 4,
           "display_text": "Enjoy!",
           "start_time": 106000
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": 10,
+      "description": "These healthy-ish, plant-based mushroom nuggets will be the hype of your next get-together. This easy snack is crispy, crunchy, and savory and pairs well with almost any dipping sauce.",
+      "name": "Mushroom “Chicken Nuggets”",
+      "prep_time_minutes": 20,
+      "thumbnail_url": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/49c3356ce3394ca9aec09bd7162a49b2.jpeg",
+      "yields": "Servings: 4",
+      "id": 18355,
+      "like": true,
+      "instructions": [
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 72353,
+          "position": 1,
+          "display_text": "Fill a large, high-walled skillet halfway with vegetable oil and heat over medium heat until the temperature reaches 350°F (180°C).",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 72354,
+          "position": 2,
+          "display_text": "Remove the caps from the mushrooms and reserve for another use, then slice the mushroom stems into ½-inch-thick rounds.",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72355,
+          "position": 3,
+          "display_text": "In a medium bowl, whisk together the buckwheat flour, cornstarch, paprika, garlic powder, salt, pepper. Add the water and whisk until smooth. Whisk in the chili powder.",
+          "start_time": 0
+        },
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 72356,
+          "position": 4,
+          "display_text": "Add the cornflakes to a separate medium bowl",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "display_text": "Dip the mushroom rounds in the batter to coat completely, then dredge in the crushed cornflakes until fully covered.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72357,
+          "position": 5
+        },
+        {
+          "id": 72358,
+          "position": 6,
+          "display_text": "Working in batches, fry the mushrooms in the hot oil until golden brown, 3–5 minutes per side. Transfer to a paper towel-lined plate to drain and sprinkle with salt.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null
+        },
+        {
+          "id": 72359,
+          "position": 7,
+          "display_text": "Serve warm with your favorite sauce for dipping.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null
+        },
+        {
+          "display_text": "Enjoy!",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72360,
+          "position": 8
         }
       ]
     }

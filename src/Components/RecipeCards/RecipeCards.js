@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Instructions from '../Instructions'
+import Instructions from '../Instructions/Instructions'
 import Recipecards from './Recipecards.css'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Grid'
@@ -67,26 +67,27 @@ function RecipeCards({recipe, setFavorites, favorites}) {
 <Grid item xs={4}> 
       <Paper id={id} onClick={handleClick} elevation={20} className="Recipecards">
           <img className="recipe-image" alt={name} src={thumbnail_url}/>
-            {showRecipe ? <Box paddingX={1}>
+            {showRecipe ? 
+            <Box paddingX={1}>
               <Typography variant="h4" component="h2">{name}</Typography>
                 <Box
                   sx={{
                     display: 'flex',
                     alignItems: 'center'
                   }}>
-                  <Typography variant="body1" component="p">
-                    Description:  {description}
+                  <Typography  variant="body1" component="p">
+                    Description:  {description || name}
                   </Typography>
                 </Box>
-                <Typography variant="subtitle1">Prep time: {prep_time_minutes} minutes</Typography>
-                <Typography variant="subtitle1">Cook time: {cook_time_minutes} minutes</Typography>
+                <Typography variant="subtitle1">Prep time: {prep_time_minutes || 'N/A'} minutes</Typography>
+                <Typography variant="subtitle1">Cook time: {cook_time_minutes || 'N/A'} minutes</Typography>
                 <Typography variant="subtitle1">Tields: {yields}</Typography>
                 {like ? <FavoriteIcon onClick={handleLike} /> : <FavoriteBorderIcon onClick={handleLike} />}
             </Box> : 
             <Box paddingX={1}>
               <Typography variant="subtitle1">
                 <ol className="inside">Instructions
-                {recipeInstructions}
+                {recipeInstructions} 
                 </ol>
               </Typography>
             </Box>}
