@@ -56,18 +56,37 @@ function ShoppingList() {
       return fetch("http://localhost:3000/groceries", configurationObject)
   }
 
+  function handleDelete(groceryID) {
+    fetch(`http://localhost:3000/groceries/${groceryID}`, {
+      method: "DELETE",
+    })
+      .then((r) => r.json())
+      .then(() => { 
+        const newGroceryList = groceryList.filter((groceryItem) => {
+          if (groceryID === groceryItem.id) {
+            return false
+          } else {
+            return true
+          }
+        })
+        setGroceryList(newGroceryList)
+      })    
+  }
+  
   //need to do something with grocerylist stae to delete?
   const groceryListItems = groceryList.map(
     (key, value) => {
     return (
       <GroceryList
+      handleDelete={handleDelete}
       key={value} 
       quantity={key.quantity} 
       measurement={key.measurement} 
-      input={key.input}/>
+      input={key.input}
+      id={key.id}/>
     )
   })
-  console.log(groceryListItems)
+  
 
   return (
     <Box className='shopping-list'

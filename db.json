@@ -2,39 +2,15 @@
   "groceries": [
     {
       "quantity": "2",
-      "input": "deblahs",
-      "measurement": "blah",
-      "id": 7
-    },
-    {
-      "quantity": "2",
-      "input": "deblahs",
-      "measurement": "blah",
-      "id": 8
+      "input": "chicken",
+      "measurement": "lbs",
+      "id": 1
     },
     {
       "quantity": "3",
-      "input": "thigns",
-      "measurement": "big",
-      "id": 9
-    },
-    {
-      "quantity": "2",
-      "input": "gasg",
-      "measurement": "gasdg",
-      "id": 10
-    },
-    {
-      "quantity": "4",
-      "input": "bgarb",
-      "measurement": "garbs",
-      "id": 11
-    },
-    {
-      "quantity": "4",
-      "input": "agadsg",
-      "measurement": "gsagdsag",
-      "id": 12
+      "input": "BBQ",
+      "measurement": "bottles",
+      "id": 2
     }
   ],
   "recipeCards": [
