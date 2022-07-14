@@ -16,6 +16,17 @@
     background-color: white;
   }
 
+#outlined-number{
+  background-color: white;
+}
+
 .standard-search{
   height: 10px;
+}
+
+.item {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #EDC7b7
+
 }

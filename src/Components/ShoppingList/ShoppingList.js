@@ -88,6 +88,8 @@ function ShoppingList() {
   
 
   return (
+    <>
+    <div className='item'></div>
     <Box className='shopping-list'
       component="form" onSubmit={handleSubmit}
       sx={{
@@ -130,6 +132,7 @@ function ShoppingList() {
       {groceryListItems}
       </Stack>
     </Box>
+    </>
     
   )
 }
