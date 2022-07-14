@@ -2,8 +2,8 @@
   "groceries": [
     {
       "quantity": "3",
-      "input": "CDASCD",
-      "measurement": "CASDC",
+      "input": "csdcs",
+      "measurement": "csadc",
       "id": 1
     }
   ],

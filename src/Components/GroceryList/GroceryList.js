@@ -13,7 +13,7 @@ import grocerylist from './grocerylist.css'
 function GroceryList({quantity, measurement, input, id, handleDelete}) {
 
 const Demo = styled('div')(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
+  backgroundColor: theme.palette.background.light,
 }));
 
 function generate(element) {
