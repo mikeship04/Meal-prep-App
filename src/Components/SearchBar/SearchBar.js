@@ -29,7 +29,6 @@ function SearchBar({handleSearchChange, searchState, handleSubmit}) {
   return (
 
     <div className="searchbar">
-      <h2>Search</h2>
       <Box
       component="form" onSubmit={handleOnSubmit}
       sx={{
