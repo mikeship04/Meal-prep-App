@@ -5,7 +5,7 @@ import Item from '@mui/material/TextField'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { amber } from '@mui/material/colors'
 
-function SearchBar({handleSearchChange, searchState, handleSubmit, handleShowFavorites}) {
+function SearchBar({handleSearchChange, searchState, handleSubmit}) {
 
   const theme = createTheme({
     palette: {
@@ -49,7 +49,6 @@ function SearchBar({handleSearchChange, searchState, handleSubmit, handleShowFav
         }}/>
         <ThemeProvider theme={theme}>
         <Button variant="contained" type="submit">Submit</Button>
-        <Button onClick={handleShowFavorites} variant="contained">Show Favorite Recipes!</Button>
         </ThemeProvider>
       </Box>
     </div>
