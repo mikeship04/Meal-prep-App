@@ -33,7 +33,6 @@ function ShoppingList({theme}) {
     setMeasurement(e.target.value)
   }
 
-  //conditionally add if statement, if event.target.id exists = run code else null
   function handleSubmit(event) {
     event.preventDefault()
     const shoppingItem = { 
@@ -41,8 +40,6 @@ function ShoppingList({theme}) {
       input: input, 
       measurement: measurement
     }
-    const shoppingItemArray = [...groceryList, shoppingItem]
-    setGroceryList(shoppingItemArray)
     setInput('')
     setQuantity('')
     setMeasurement('')
@@ -55,7 +52,9 @@ function ShoppingList({theme}) {
       },
       body: JSON.stringify(shoppingItem),
       } 
-      return fetch("http://localhost:3000/groceries", configurationObject)
+      fetch("http://localhost:3000/groceries", configurationObject)
+      .then(res => res.json())
+      .then(data => setGroceryList([...groceryList, data]))
   }
 
   function handleDelete(groceryID) {

@@ -43,10 +43,10 @@
       "id": 16
     },
     {
-      "quantity": "3",
-      "input": "chicken",
-      "measurement": "lbs",
-      "id": 17
+      "quantity": "1",
+      "input": "asgag",
+      "measurement": "agadg",
+      "id": 19
     }
   ],
   "recipeCards": [
@@ -641,6 +641,420 @@
           "id": 70649,
           "position": 7,
           "display_text": "Serve alongside tomato sauce."
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": 6,
+      "description": "Inspired by Swiss rösti, this golden, crispy hash brown becomes a canvas for anything your heart desires. Go full-on fancy with high-end ingredients like crème fraîche and trout roe, or keep it simple with a fried egg. ",
+      "name": "Fancy Hash Brown",
+      "prep_time_minutes": 5,
+      "thumbnail_url": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/421afefe85bf40f98fe2a050917cd708.jpeg",
+      "yields": "Serves 1",
+      "id": 18119,
+      "like": true,
+      "instructions": [
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 70724,
+          "position": 1,
+          "display_text": "Using a food processor fitted with the large grater attachment (or the large holes on a box grated), shred the potato. Transfer to a medium bowl and toss with the salt, then let sit for about 5 minutes to draw out excess moisture."
+        },
+        {
+          "position": 2,
+          "display_text": "Transfer the shredded potato to a clean, lint-free kitchen towel and wring out as much moisture as possible. Wipe out the bowl, then the potato to the bowl and season with pepper. Use your fingers to separate the shreds into a fluffy pile.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 70725
+        },
+        {
+          "position": 3,
+          "display_text": "Heat a 6-inch cast iron skillet over medium heat until very hot. Line a wire rack or plate with paper towels and set nearby.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 70726
+        },
+        {
+          "id": 70727,
+          "position": 4,
+          "display_text": "Once the skillet is very hot, add 1 tablespoon of ghee and swirl to coat the pan. Carefully transfer the potato shreds to the skillet and use a spatula to gently pat down into a uniform circle. Cook for 3–5 minutes, until the bottom is a deep golden brown and crispy. Set a plate upside-down over the skillet, place your hand on top to hold it in place, and carefully flip the skillet upside down to release the hash brown from the pan. (Be careful, the skillet will be very hot!)",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null
+        },
+        {
+          "position": 5,
+          "display_text": "Return the skillet to the heat, then add the remaining tablespoon of ghee. Let the ghee warm for about 30 seconds, then slide the hash brown, uncooked side down, back into the skillet. Cook for another 3–5 minutes, until golden brown, then remove from the skillet and place on the paper towels to drain.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 70728
+        },
+        {
+          "id": 70729,
+          "position": 6,
+          "display_text": "Let the hash brown cool for a few minutes, before topping with a generous dollop of crème fraîche, smoked salmon, chives, dill, and roe. Finish with a squeeze of lemon and serve immediately.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null
+        },
+        {
+          "display_text": "Enjoy!",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 70731,
+          "position": 7
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": null,
+      "description": "",
+      "name": "Gluten-Free Smoked Loaded Nachos",
+      "prep_time_minutes": null,
+      "thumbnail_url": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/3d388522eda24b7b956fd6521d0fc8c0.jpeg",
+      "yields": "Servings: 4-6",
+      "id": 28268,
+      "like": true,
+      "instructions": [
+        {
+          "start_time": 0,
+          "appliance": "oven",
+          "end_time": 0,
+          "temperature": 300,
+          "id": 71878,
+          "position": 1,
+          "display_text": "Set smoker to 300°F. Place beef in a cast iron skillet and brown in a smoker. Once browned, add taco seasoning. Then, remove beef from the skillet and set aside and set the smoker to 225°F."
+        },
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 71879,
+          "position": 2,
+          "display_text": "Line skillet with a layer of chips, cheese, meat, tomatoes and onion. Then, repeat these steps until the skillet is full. Top skillet with remaining cheese.",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71880,
+          "position": 3,
+          "display_text": "Smoke at 225° for 10 minutes. Then, set the smoker to 400° and cook until the cheese is golden brown.",
+          "start_time": 0
+        },
+        {
+          "display_text": "Take the skillet off of the smoker and top with avocado, green onion, and tomato.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71881,
+          "position": 4
+        },
+        {
+          "temperature": null,
+          "id": 71882,
+          "position": 5,
+          "display_text": "Serve topped with dollops of sour cream.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": null,
+      "description": "",
+      "name": "Salmon \"Spaghetti\" Agilo E Olio",
+      "prep_time_minutes": null,
+      "thumbnail_url": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/ac34711c8abe428db6a22fb1da788c37.jpeg",
+      "yields": "Servings: 2",
+      "id": 18267,
+      "like": true,
+      "instructions": [
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 71875,
+          "position": 1,
+          "display_text": "Slice salmon into thin strips.",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71876,
+          "position": 2,
+          "display_text": "Place strips of salmon into a shallow bowl and then add the rest of the ingredients and toss everything together."
+        },
+        {
+          "id": 71877,
+          "position": 3,
+          "display_text": "To serve, sprinkle salt and pepper over the top along with extra nutritional yeast and parsley.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": null,
+      "description": "",
+      "name": "Omelet With Salmon & Cream Cheese",
+      "prep_time_minutes": null,
+      "thumbnail_url": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/35d4735861ac471eae755b825f17ce79.jpeg",
+      "yields": "Servings: 2",
+      "id": 18270,
+      "like": true,
+      "instructions": [
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 71887,
+          "position": 1,
+          "display_text": "Crack the eggs in a bowl and whisk them together with a splash of milk. In a separate bowl, mix chives with cream cheese, add ground pepper to taste, and combine. Set aside remaining leftover chives for garnish.",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71888,
+          "position": 2,
+          "display_text": "Heat up your frying pan with a knob of butter over medium heat. Once the butter has fully melted, pour half of the egg mixture into the pan. Slightly whisk the egg in the pan until it starts to set so that it cooks more evenly.",
+          "start_time": 0
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71889,
+          "position": 3,
+          "display_text": "Once the egg mixture has set, flip the omelet and cook the other side until it is slightly golden brown."
+        },
+        {
+          "display_text": "Once the omelet is cooked, fold it in the pan, then transfer to a plate.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71890,
+          "position": 4
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71891,
+          "position": 5,
+          "display_text": "Repeat the process for the second omelet."
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71892,
+          "position": 6,
+          "display_text": "Grind some salt & pepper over the omelets and top the omelets with small pieces of the smoked salmon. Then place a scoop of cream cheese on top of the smoked salmon. Finish the dish off by sprinkling the remaining diced chives over the omelet."
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71893,
+          "position": 7,
+          "display_text": "Serve."
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": null,
+      "description": "",
+      "name": "Kazakhh Beef Plov",
+      "prep_time_minutes": null,
+      "thumbnail_url": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/87381c5f66b146c7ba489664ee95a7ee.jpeg",
+      "yields": "Servings: 6-10",
+      "id": 18240,
+      "like": true,
+      "instructions": [
+        {
+          "start_time": 0,
+          "appliance": "oven",
+          "end_time": 0,
+          "temperature": 340,
+          "id": 71633,
+          "position": 1,
+          "display_text": "Preheat the oven to 340° F (171° C). Skip this step if cooking on the stove top."
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71634,
+          "position": 2,
+          "display_text": "Heat the oil in a Kazan or heavy-bottom dutch oven. Add cut-up meat into the oil and sauté until the meat is no longer red. Reduce heat to low and let cook, stirring periodically, until the water cooks out (about an hour). Then, add sliced onions to the meat and sauté until translucent."
+        },
+        {
+          "id": 71635,
+          "position": 3,
+          "display_text": "In the meantime, heat a separate skillet on medium-high heat and add a tablespoon of oil. Sauté carrots until slightly softened but still has a bite.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null
+        },
+        {
+          "temperature": null,
+          "id": 71636,
+          "position": 4,
+          "display_text": "When the onion is done cooking, add all the spices (cumin, garlic, black pepper, salt, bay leaf). Let cook for one minute. Add rice and water and bring to low boil.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0
+        },
+        {
+          "display_text": "\"Straighten\" out rice and add carrots on the top, spreading them out evenly. Cover with lid and bake in the oven for 40-45 minutes. If using the stove top, reduce heat to medium-low and cook for 40-45 minutes.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71637,
+          "position": 5
+        },
+        {
+          "position": 6,
+          "display_text": "Remove from the oven once cooked. Let sit for 15 minutes before opening.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71638
+        },
+        {
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71639,
+          "position": 7,
+          "display_text": "Mix the carrots into the rice and serve.",
+          "start_time": 0
+        },
+        {
+          "position": 8,
+          "display_text": "Enjoy!",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71640
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": null,
+      "description": "",
+      "name": "Grilled Steak And Mushroom Flatbread",
+      "prep_time_minutes": null,
+      "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/372176.jpg",
+      "yields": "Servings: 2–4",
+      "id": 18170,
+      "like": true,
+      "instructions": [
+        {
+          "start_time": 0,
+          "appliance": "oven",
+          "end_time": 0,
+          "temperature": 350,
+          "id": 71140,
+          "position": 1,
+          "display_text": "Preheat the grill to 350°F (180°C)."
+        },
+        {
+          "position": 2,
+          "display_text": "Roll the pizza dough out to ½ inch (1.24 cm) thick in your desired shape and place on a baking sheet. Brush ¼ cup (60 ml) olive oil over both sides of the dough.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71141
+        },
+        {
+          "display_text": "Break apart the bunapi and oyster mushrooms into thick chunks. Transfer to a small bowl and toss with 2 tablespoons of olive oil and ½ tablespoon Grill Mates® Montreal Steak Seasoning.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71142,
+          "position": 3
+        },
+        {
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71143,
+          "position": 4,
+          "display_text": "Slice the flat iron steak into ½-inch-thick strips. Transfer to a medium bowl and toss with 1½ tablespoons of olive oil and the remaining 1 tablespoon Grill Mates® Montreal Steak Seasoning.",
+          "start_time": 0
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71144,
+          "position": 5,
+          "display_text": "Arrange the steak strips on one side of the grill. Cook until light pink in the center, 3–4 minutes per side. Arrange the mushrooms on the other side of the grill and cook until lightly browned around the edges and tender, about 2 minutes per side. Transfer the steak and mushrooms to a cutting board. Break apart some of the mushrooms and chop the steak strips into smaller, bite-size pieces."
+        },
+        {
+          "display_text": "Place the oiled pizza dough directly on the grill grates. Close the lid and grill for about 4 minutes, until the bottom is light browned and cooked through. Flip the pizza dough and sprinkle with the mozzarella and Parmesan cheeses. Scatter the mushrooms and steak on top of the cheese. Sprinkle with more Grill Mates® Montreal Steak Seasoning. Close the lid and cook for another 5 minutes, until the cheese is melted and the pizza dough is cooked through.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71145,
+          "position": 6
+        },
+        {
+          "display_text": "Remove the flatbread from the grill and top with the McCormick® Dried Parsley and remaining ½ tablespoon olive oil. Serve immediately.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71146,
+          "position": 7
+        },
+        {
+          "position": 8,
+          "display_text": "Enjoy!",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71147
         }
       ]
     }
