@@ -6,12 +6,11 @@ import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button'
 import {ThemeProvider } from '@mui/material/styles'
 
-function RecipeCardContainer({recipes, like, setLike, handleShowFavorites, display, theme}) {
+function RecipeCardContainer({recipes, handleShowFavorites, display, theme, handleAddFavorite}) {
 
     const renderRecipes = recipes.map((r) => {
-       return <RecipeCards 
-       like={like}
-       setLike={setLike} 
+       return <RecipeCards
+       handleAddFavorite={handleAddFavorite} 
        key={r.id} 
        recipe={r}/>
     })

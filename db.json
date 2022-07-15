@@ -1,16 +1,52 @@
 {
   "groceries": [
     {
-      "quantity": "3",
-      "input": "csdcs",
-      "measurement": "csadc",
-      "id": 1
-    },
-    {
       "quantity": "2",
       "input": "potatoes",
       "measurement": "lbs",
       "id": 3
+    },
+    {
+      "quantity": "3",
+      "input": "salmon",
+      "measurement": "lbs",
+      "id": 4
+    },
+    {
+      "quantity": "2",
+      "input": "carrots",
+      "measurement": "lbs",
+      "id": 5
+    },
+    {
+      "quantity": "1",
+      "input": "buns",
+      "measurement": "package",
+      "id": 7
+    },
+    {
+      "quantity": "2",
+      "input": "carrots",
+      "measurement": "lbs",
+      "id": 14
+    },
+    {
+      "quantity": "1",
+      "input": "salmon",
+      "measurement": "side",
+      "id": 15
+    },
+    {
+      "quantity": "3",
+      "input": "chicken",
+      "measurement": "lbs",
+      "id": 16
+    },
+    {
+      "quantity": "3",
+      "input": "chicken",
+      "measurement": "lbs",
+      "id": 17
     }
   ],
   "recipeCards": [
@@ -287,6 +323,324 @@
           "temperature": null,
           "id": 71027,
           "position": 23
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": null,
+      "description": "",
+      "name": "Afghani Kebab",
+      "prep_time_minutes": null,
+      "thumbnail_url": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/7bd5cf2348e741339d667738e102b346.jpeg",
+      "yields": "Servings: 8-10",
+      "id": 18232,
+      "like": true,
+      "instructions": [
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71558,
+          "position": 1,
+          "display_text": "In a large bowl, add minced beef, ginger garlic paste, vinegar, salt, black paper, green chili paste and combine. Rest for 2 hours to allow meat to marinate."
+        },
+        {
+          "display_text": "After 2 hours, add tomatoes, onions, coriander and mint leaves and mix well until combined.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71559,
+          "position": 2
+        },
+        {
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71560,
+          "position": 3,
+          "display_text": "Add 3 tbsp oil to a frying pan on medium heat. Once oil is heated, form meat and vegetable mixture into small, golf-ball-sized patties and flatten slightly.",
+          "start_time": 0
+        },
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 71561,
+          "position": 4,
+          "display_text": "Add patties to a skillet, spacing apart slightly. Pan-fry one side, then flip and pan-fry until both sides are browned and meat is cooked through.",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "position": 5,
+          "display_text": "Serve fresh and, if desired, with freshly sliced carrots, cucumbers, and mint chutney or sauce.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71562
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": 15,
+      "description": "Cook with Color and make this rainbow custard tart. This dish was inspired by Tasty’s colorful cookware sets and is easy to make, with a sweet marshmallow and cereal crust, balanced custard filling in rainbow colors, and lots of fresh fruit on top.",
+      "name": "Inga’s Rainbow Custard Tart",
+      "prep_time_minutes": 30,
+      "thumbnail_url": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/17081d5542694a5bb9267f6a61ed7fa6.jpeg",
+      "yields": "Servings: 8",
+      "id": 18361,
+      "like": true,
+      "instructions": [
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 72405,
+          "position": 1,
+          "display_text": "Make the tart crust: Generously grease a 10-inch tart pan with nonstick spray.",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72406,
+          "position": 2,
+          "display_text": "In a large nonstick skillet, melt the sugar over low heat, until dissolved, but not caramelized, about 2 minutes.  Stir in the marshmallows until completely melted. Turn off the heat.",
+          "start_time": 0
+        },
+        {
+          "position": 3,
+          "display_text": "Using a heatproof rubber spatula, add the rice cereal to the marshmallow mixture and stir until completely coated and incorporated.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72407
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72408,
+          "position": 4,
+          "display_text": "Carefully transfer the cereal mixture to the prepared tart pan. Generously grease your hands with nonstick spray, then use to spread and pat down the mixture into an even layer against the bottom and up the sides of the pan. Transfer the crust to the refrigerator to chill for about 20 minutes, or until ready to fill."
+        },
+        {
+          "display_text": "Make the rainbow pastry cream: In a medium saucepan, whisk together the sugar, cornstarch, lemon zest and salt.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72409,
+          "position": 5
+        },
+        {
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72410,
+          "position": 6,
+          "display_text": "In a large bowl, whisk together the egg yolks and milk.  Add the mixture to the saucepan, along with the butter, and bring to a boil over medium heat, whisking constantly. Let boil for 2 minutes, then remove from the heat and stir in the vanilla.",
+          "start_time": 0
+        },
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 72411,
+          "position": 7,
+          "display_text": "Strain the pastry cream through a fine-mesh sieve into a large heatproof bowl.",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "display_text": "Divide the pastry cream evenly between 6 medium bowls, approximately ¾ cups each. Dye each bowl of pastry cream as follows: to make red, add 10 drops of red food coloring. To make orange, add 10 drops of red and 12 drops of yellow. To make yellow, add 8 drops of yellow.  To make green, add 12 drops of green.  To make blue, add 10 drops of blue. To make purple, add 10 drops of blue and 10 drops of red. Stir each bowl with a clean whisk  or small rubber spatula until evenly colored.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72412,
+          "position": 8
+        },
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 72413,
+          "position": 9,
+          "display_text": "Assemble the tart: Fill the cereal crust with the colored pastry cream in even lines, starting with red, then orange, yellow, green, blue, and purple.  Return the tart to the refrigerator to chill for at least 1 hour, or overnight.",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 72414,
+          "position": 10,
+          "display_text": "Just before serving, decorate the tart with the color-coordinating fruits: strawberries and cherries over the red cream, mango over the orange, pineapple over the yellow, kiwi over the green, blueberries over the blue, and blackberries and dragon fruit over the purple.",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "display_text": "Slice and serve.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 72415,
+          "position": 11
+        },
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 72416,
+          "position": 12,
+          "display_text": "Enjoy!",
+          "start_time": 0,
+          "appliance": null
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": null,
+      "description": "",
+      "name": "Braciole Bites",
+      "prep_time_minutes": null,
+      "thumbnail_url": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d8eb00b876e94627a6bdf8ec862471fa/BFV90054_PerfectPairing_AE_041422_004_1X1_IG.jpg",
+      "yields": "Makes 4 skewers",
+      "id": 18202,
+      "like": true,
+      "instructions": [
+        {
+          "position": 1,
+          "display_text": "Arrange the beef in a single layer on a large platter. Sprinkle with ½ teaspoon salt, then drizzle with ¼ cup (60 ml) olive oil. Turn the pieces of beef over and sprinkle with another ½ teaspoon salt and another ¼ cup olive oil. Let sit while you prepare the bread crumb mixture.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71381
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 71382,
+          "position": 2,
+          "display_text": "Add the bread crumbs, remaining ½ teaspoon salt, the parsley, Parmesan cheese, pepper, and garlic powder to a large, shallow bowl and mix together. Add 2 tablespoons of olive oil and mix until the bread crumbs are lightly coated, but not greasy."
+        },
+        {
+          "temperature": null,
+          "id": 71383,
+          "position": 3,
+          "display_text": "Working with one piece at a time, lift the beef and let the excess olive oil drip off. Place in the bread crumb mixture and press into the crumbs to coat both sides. Set the beef down in the crumbs and place a piece of provolone cheese on. Starting from a short side, roll tightly. Thread the beef roll onto a 12-inch metal skewer, and repeat with the rest of the beef, 6–7 rolls per skewer.",
+          "start_time": 28000,
+          "appliance": null,
+          "end_time": 34500
+        },
+        {
+          "id": 71384,
+          "position": 4,
+          "display_text": "Heat the remaining 2 tablespoons of olive oil on a large flat-top pan or griddle over high heat. Working in batches, place the skewers in the pan and cook for 5–7 minutes on each side, until the braciole are browned and cooked through. Add more olive oil between batches, if needed.",
+          "start_time": 35000,
+          "appliance": null,
+          "end_time": 41166,
+          "temperature": null
+        },
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 71385,
+          "position": 5,
+          "display_text": "Serve immediately garnished with more parsley.",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "start_time": 44333,
+          "appliance": null,
+          "end_time": 46833,
+          "temperature": null,
+          "id": 71386,
+          "position": 6,
+          "display_text": "Enjoy!"
+        }
+      ]
+    },
+    {
+      "cook_time_minutes": null,
+      "description": "",
+      "name": "Easy Beef Hand Pies",
+      "prep_time_minutes": null,
+      "thumbnail_url": "https://img.buzzfeed.com/tasty-app-user-assets-prod-us-east-1/recipes/11e6176999dd4d3fa7444224e8891cdb.jpeg",
+      "yields": "Servings: 4",
+      "id": 18107,
+      "like": true,
+      "instructions": [
+        {
+          "display_text": "Preheat the oven to 200°C.",
+          "start_time": 0,
+          "appliance": "oven",
+          "end_time": 0,
+          "temperature": 392,
+          "id": 70643,
+          "position": 1
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 70644,
+          "position": 2,
+          "display_text": "Combine the onion, green pepper, spices, and soy sauce together in a medium bowl. Add the mince and the egg to the other bowl and mix well until all the ingredients are well-combined."
+        },
+        {
+          "end_time": 0,
+          "temperature": null,
+          "id": 70645,
+          "position": 3,
+          "display_text": "Roll out the thawed puff pastry until it measures approximately 33 x 27 cm. Once this is done, cut the puff pastry into 4 equal pieces (approximately 8cm in size).",
+          "start_time": 0,
+          "appliance": null
+        },
+        {
+          "temperature": null,
+          "id": 70646,
+          "position": 4,
+          "display_text": "Fill each piece of puff pastry with approximately 55g of the mince mixture. Spread the mixture generously onto the puff pastry, making sure to leave enough space around the edges for folding.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 70647,
+          "position": 5,
+          "display_text": "Dab some water around the edges of the puff pastry and fold to make a “pie shape”. Use a fork to help you seal the edges, if necessary. Brush the top of the pies with a beaten egg. Make slight incisions on the top of each hand pie to allow the steam to escape."
+        },
+        {
+          "position": 6,
+          "display_text": "Bake for 20-25 minutes, or until the crust is golden-brown and crispy.",
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 70648
+        },
+        {
+          "start_time": 0,
+          "appliance": null,
+          "end_time": 0,
+          "temperature": null,
+          "id": 70649,
+          "position": 7,
+          "display_text": "Serve alongside tomato sauce."
         }
       ]
     }

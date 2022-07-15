@@ -13,8 +13,9 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 // instructions - array of objects we want display_text, position recipe.instructions.forEach((instruction)
 // what we want to grab id to add key value
 
-function RecipeCards({recipe, like, setLike}) {
+function RecipeCards({recipe, handleAddFavorite}) {
   const [showRecipe, setShowRecipe] = useState(true)
+  const [like, setLike] = useState(false)
   const instructionArray = recipe.instructions ?? [{display_text: 'recipe not found'}]
   
     const {
@@ -57,17 +58,17 @@ function RecipeCards({recipe, like, setLike}) {
             like: true,
             instructions,
           }
-          const recipeItemArray = recipeItem
       
-          const configurationObject = {
+            fetch("http://localhost:3000/recipeCards", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
               "Accept": "application/json",
             },
-            body: JSON.stringify(recipeItemArray),
-            } 
-            return fetch("http://localhost:3000/recipeCards", configurationObject)
+            body: JSON.stringify(recipeItem),
+            }) 
+            .then(res => res.json())
+            .then((newItem) => handleAddFavorite(newItem))
         }
 
   return (

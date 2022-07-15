@@ -13,7 +13,6 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 function App() {
   const [recipes, setRecipes] = useState([])
   const [searchState, setSearchState] = useState('')
-  const [like, setLike] = useState(false)
   const searchParam = searchState
   // make options another file and import
   const options = {
@@ -67,6 +66,10 @@ function App() {
     setDisplay(!display)
   }  
 
+  function handleAddFavorite(newItem) {
+    setFavorites([...favorites, newItem]);
+  }
+
   return (
     <div className="App">
       <Navbar 
@@ -74,11 +77,10 @@ function App() {
         searchState={searchState} 
         handleSearchChange={handleSearchChange} />
       <RecipeCardContainer
+      handleAddFavorite={handleAddFavorite}
       theme={theme}
       handleShowFavorites={handleShowFavorites}
       display={display}  
-      like={like}
-      setLike={setLike}
       recipes={display ? recipes : favorites}/>
       <ShoppingList theme={theme} />
     </div>
