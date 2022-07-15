@@ -13,9 +13,8 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 // instructions - array of objects we want display_text, position recipe.instructions.forEach((instruction)
 // what we want to grab id to add key value
 
-function RecipeCards({recipe, setFavorites, favorites}) {
+function RecipeCards({recipe, like, setLike}) {
   const [showRecipe, setShowRecipe] = useState(true)
-  const [like, setLike] = useState(false)
   const instructionArray = recipe.instructions ?? [{display_text: 'recipe not found'}]
   
     const {

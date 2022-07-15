@@ -5,10 +5,15 @@ import RecipeCardContainer from './Components/RecipeCardContainer/RecipeCardCont
 import ShoppingList from './Components/ShoppingList/ShoppingList';
 import Home from './Components/Router/Home'
 import {key} from './superSecretStuff'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+import { amber } from '@mui/material/colors'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 function App() {
   const [recipes, setRecipes] = useState([])
   const [searchState, setSearchState] = useState('')
+  const [like, setLike] = useState(false)
   const searchParam = searchState
   // make options another file and import
   const options = {
@@ -20,6 +25,16 @@ function App() {
   };
   const [favorites, setFavorites] = useState([])
   const [display, setDisplay] = useState([true])
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: amber[500],
+      },
+      secondary: {
+        main: '#ff9100',
+      },
+    },
+  });
 
   useEffect(() => {
    fetch('http://localhost:3000/recipeCards')
@@ -55,15 +70,17 @@ function App() {
   return (
     <div className="App">
       <Navbar 
-        handleShowFavorites={handleShowFavorites} 
         handleSubmit={handleSubmit} 
         searchState={searchState} 
         handleSearchChange={handleSearchChange} />
-      <RecipeCardContainer 
-      setFavorites={setFavorites}
-      favorites={favorites} 
+      <RecipeCardContainer
+      theme={theme}
+      handleShowFavorites={handleShowFavorites}
+      display={display}  
+      like={like}
+      setLike={setLike}
       recipes={display ? recipes : favorites}/>
-      <ShoppingList />
+      <ShoppingList theme={theme} />
     </div>
   );
 }
