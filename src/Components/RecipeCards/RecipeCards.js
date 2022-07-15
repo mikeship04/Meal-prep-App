@@ -15,9 +15,11 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 function RecipeCards({recipe, handleAddFavorite}) {
   const [showRecipe, setShowRecipe] = useState(true)
-  const [like, setLike] = useState(false)
+  const [like, setLike] = useState(recipe.like)
   const instructionArray = recipe.instructions ?? [{display_text: 'recipe not found'}]
   
+
+
     const {
         cook_time_minutes, 
         description, 
@@ -55,10 +57,10 @@ function RecipeCards({recipe, handleAddFavorite}) {
             thumbnail_url, 
             yields,
             id: id+10000,
-            like: true,
+            like: !like,
             instructions,
           }
-      
+      // if like state = true fetch
             fetch("http://localhost:3000/recipeCards", {
             method: "POST",
             headers: {
@@ -69,6 +71,7 @@ function RecipeCards({recipe, handleAddFavorite}) {
             }) 
             .then(res => res.json())
             .then((newItem) => handleAddFavorite(newItem))
+      //else delete from server and update state
         }
 
   return (
